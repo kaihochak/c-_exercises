@@ -5,6 +5,8 @@ simple todo
 Name:          Kai Ho Chak
 Due Date:      February 24, 2021
 
+main() not implemented, use ioutil and test_todo
+
 */
 
 #include <iostream>
@@ -28,26 +30,26 @@ void load (istream &infile,
     
     while ( !infile.eof() )
     {
-		infile.get(space);
-		infile.getline(desc, MAXLEN);
-		
-		// create new item
-		new_item = create_node (desc, priority);
-		
-		// for empty list
-		if ( head == NULL )
-		{
-		    current = new_item;
-		    head = current;
-		}
-		// for non-empty list
-		else
-		{
-		    current->next = new_item;
-		    current = current->next;
-		}
+	infile.get(space);
+	infile.getline(desc, MAXLEN);
 
-		infile >> priority;
+	// create new item
+	new_item = create_node (desc, priority);
+
+	// for empty list
+	if ( head == NULL )
+	{
+	    current = new_item;
+	    head = current;
+	}
+	// for non-empty list
+	else
+	{
+	    current->next = new_item;
+	    current = current->next;
+	}
+
+	infile >> priority;
     }
 
     new_item = NULL;
@@ -253,17 +255,3 @@ void destroy_list (To_Do_Item_Ptr &head)
 	
     return;
 } // destroy_list ends
-
-
-
-]
-/*
- * 
- *	main() not implemented, use ioutil and test_todo
- * 
- */
-
-int main() 
-{
-	return 0;
-}
