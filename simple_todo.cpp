@@ -2,8 +2,8 @@
 
 simple todo
 
-Name:          Kai Ho Chak
-Due Date:      February 24, 2021
+Name:          	Kai Ho Chak
+Date:		February 24, 2021
 
 main() not implemented, use ioutil and test_todo
 
