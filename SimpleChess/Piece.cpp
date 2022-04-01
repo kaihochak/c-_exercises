@@ -1,12 +1,7 @@
 /*
               
-Name:          Jacob Chak     
-Email:         kchak676@mtroyal.ca  
-Course:        COMP1633 - 001   
-Assignment:    Assignment 5
-Due Date:      April 13, 2021       
-Instructor:    Paul Pospisil          
-Source File:   Piece.cpp  
+Name:      Kai Ho Chak     
+Date:      April 13, 2021     
               
 */
 
